@@ -1,0 +1,14 @@
+C:\Projetos\projTextEditor\bin\Debug\net8.0\projTextEditor.exe
+C:\Projetos\projTextEditor\bin\Debug\net8.0\projTextEditor.deps.json
+C:\Projetos\projTextEditor\bin\Debug\net8.0\projTextEditor.runtimeconfig.json
+C:\Projetos\projTextEditor\bin\Debug\net8.0\projTextEditor.dll
+C:\Projetos\projTextEditor\bin\Debug\net8.0\projTextEditor.pdb
+C:\Projetos\projTextEditor\obj\Debug\net8.0\projTextEditor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\projTextEditor\obj\Debug\net8.0\projTextEditor.AssemblyInfoInputs.cache
+C:\Projetos\projTextEditor\obj\Debug\net8.0\projTextEditor.AssemblyInfo.cs
+C:\Projetos\projTextEditor\obj\Debug\net8.0\projTextEditor.csproj.CoreCompileInputs.cache
+C:\Projetos\projTextEditor\obj\Debug\net8.0\projTextEditor.dll
+C:\Projetos\projTextEditor\obj\Debug\net8.0\refint\projTextEditor.dll
+C:\Projetos\projTextEditor\obj\Debug\net8.0\projTextEditor.pdb
+C:\Projetos\projTextEditor\obj\Debug\net8.0\projTextEditor.genruntimeconfig.cache
+C:\Projetos\projTextEditor\obj\Debug\net8.0\ref\projTextEditor.dll
