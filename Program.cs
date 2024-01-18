@@ -33,7 +33,8 @@ class Program{
 
     static void Open(){
         Console.Clear();
-        Console.WriteLine("Qual o caminho do arquivo?");
+
+        Console.WriteLine($"Qual o caminho do arquivo? || Ex: C:\\Projetos\\nome-do-arquivo.txt");
         string path = Console.ReadLine();
 
         using(var file = new StreamReader(path)){
@@ -43,40 +44,49 @@ class Program{
         }
 
         Console.WriteLine("");
-        Console.ReadLine();
-        Menu();
+        Console.WriteLine("Pressione [ESC] para sair || Pressione [ENTER] para retornar ao Menu");
 
-    }
+            if(Console.ReadKey().Key == ConsoleKey.Escape){
+                System.Environment.Exit(0);
+            } else {
+                Menu();
+            }
+      }
 
     static void Edit(){
         Console.Clear();
 
         Console.WriteLine("Digite seu texto abaixo || Pressione [ESC] para sair ");
-        Console.WriteLine("------------------------");
+        Console.WriteLine("------------------------------------------------------");
         string text = "";
 
         do{
             text+= Console.ReadLine(); //lendo apenas linha
             text+= Environment.NewLine; //adicionando nova linha
-        }
-        while(Console.ReadKey().Key != ConsoleKey.Escape); //enquanto a entrada da tecla n for ESC
-
-        Save(text);    
+        } while(Console.ReadKey().Key != ConsoleKey.Escape); //enquanto a entrada da tecla n for ESC
+        
+        Save(text);
         }
     
     static void Save(string text){
         Console.Clear();
-        Console.WriteLine("Onde você deseja salvar o arquivo?");
+        Console.WriteLine("1 Onde você deseja salvar o arquivo? || Ex: C:\\Projetos\\nome-do-arquivo.txt");
         var path = Console.ReadLine();
 
         using(var file = new StreamWriter(path)){ //criando e salvando arquivo
             file.Write(text);
         } 
         
+        Console.WriteLine("");
         Console.WriteLine($"Arquivo {path} salvo com sucesso!");
-        Console.ReadLine();
-        Menu();
-    }
+        Console.WriteLine("");
+        Console.WriteLine("Pressione [ESC] para sair || Pressione [ENTER] para retornar ao Menu");
 
+        if(Console.ReadKey().Key == ConsoleKey.Escape){
+                System.Environment.Exit(0);
+            } else {
+                Menu();
+            }
+        }
     }
 }
