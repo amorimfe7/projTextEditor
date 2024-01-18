@@ -50,7 +50,19 @@ class Program{
         while(Console.ReadKey().Key != ConsoleKey.Escape); //enquanto a entrada da tecla n for ESC
             Console.Write(text);
         }
+    
+    static void Save(string text){
+        Console.Clear();
 
+        Console.WriteLine("Onde você deseja salvar o arquivo?");
+        var path = Console.ReadLine();
+
+        using(var file = new StreamWriter(path)){ //criando e salvando arquivo
+            file.Write(text);
+        } 
+        
+        Console.WriteLine("Arquivo salvo com sucesso!");
+    }
 
     }
 }
