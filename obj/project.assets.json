@@ -3,7 +3,7 @@
   "targets": {
     "net8.0": {}
   },
-  "libraries": {},
+  "libraries": {}, 
   "projectFileDependencyGroups": {
     "net8.0": []
   },

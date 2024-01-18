@@ -65,7 +65,7 @@ class Program{
             text+= Environment.NewLine; 
         } while(Console.ReadKey().Key != ConsoleKey.Escape);
         
-        Save(text);
+        Save(text); 
         }
     
     static void Save(string text){
