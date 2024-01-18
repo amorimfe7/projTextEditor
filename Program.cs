@@ -20,6 +20,15 @@
             Console.WriteLine("[0] - Sair");
             Console.WriteLine("------------------------");
             Console.WriteLine("");
-        }
+
+            short option = short.Parse(Console.ReadLine());
+
+            switch(option){
+                case 0: System.Environment.Exit(0); break;
+                case 1: //Open(); break;
+                case 2: //Edit(); break;
+                default: Menu(); break;
+            }
+        } 
     }
 }
