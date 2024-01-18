@@ -39,7 +39,7 @@ class Program{
 
         using(var file = new StreamReader(path)){
             
-            string text = file.ReadToEnd(); //ler arq até o final
+            string text = file.ReadToEnd();
             Console.WriteLine(text);
         }
 
@@ -61,9 +61,9 @@ class Program{
         string text = "";
 
         do{
-            text+= Console.ReadLine(); //lendo apenas linha
-            text+= Environment.NewLine; //adicionando nova linha
-        } while(Console.ReadKey().Key != ConsoleKey.Escape); //enquanto a entrada da tecla n for ESC
+            text+= Console.ReadLine(); 
+            text+= Environment.NewLine; 
+        } while(Console.ReadKey().Key != ConsoleKey.Escape);
         
         Save(text);
         }
@@ -73,7 +73,7 @@ class Program{
         Console.WriteLine("1 Onde você deseja salvar o arquivo? || Ex: C:\\Projetos\\nome-do-arquivo.txt");
         var path = Console.ReadLine();
 
-        using(var file = new StreamWriter(path)){ //criando e salvando arquivo
+        using(var file = new StreamWriter(path)){
             file.Write(text);
         } 
         
