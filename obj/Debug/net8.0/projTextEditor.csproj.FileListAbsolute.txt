@@ -12,3 +12,4 @@ C:\Projetos\projTextEditor\obj\Debug\net8.0\refint\projTextEditor.dll
 C:\Projetos\projTextEditor\obj\Debug\net8.0\projTextEditor.pdb
 C:\Projetos\projTextEditor\obj\Debug\net8.0\projTextEditor.genruntimeconfig.cache
 C:\Projetos\projTextEditor\obj\Debug\net8.0\ref\projTextEditor.dll
+C:\Projetos\projTextEditor\obj\Debug\net8.0\projTextEditor.sourcelink.json

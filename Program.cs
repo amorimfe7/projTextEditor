@@ -25,13 +25,26 @@ class Program{
 
         switch(option){
             case 0: System.Environment.Exit(0); break;
-            case 1: //Open(); break;
-            case 2: //Edit(); break;
+            case 1: Open(); break;
+            case 2: Edit(); break;
             default: Menu(); break;
         }
     }
 
     static void Open(){
+        Console.Clear();
+        Console.WriteLine("Qual o caminho do arquivo?");
+        string path = Console.ReadLine();
+
+        using(var file = new StreamReader(path)){
+            
+            string text = file.ReadToEnd(); //ler arq até o final
+            Console.WriteLine(text);
+        }
+
+        Console.WriteLine("");
+        Console.ReadLine();
+        Menu();
 
     }
 
@@ -42,18 +55,17 @@ class Program{
         Console.WriteLine("------------------------");
         string text = "";
 
-
         do{
             text+= Console.ReadLine(); //lendo apenas linha
             text+= Environment.NewLine; //adicionando nova linha
         }
         while(Console.ReadKey().Key != ConsoleKey.Escape); //enquanto a entrada da tecla n for ESC
-            Console.Write(text);
+
+        Save(text);    
         }
     
     static void Save(string text){
         Console.Clear();
-
         Console.WriteLine("Onde você deseja salvar o arquivo?");
         var path = Console.ReadLine();
 
@@ -61,7 +73,9 @@ class Program{
             file.Write(text);
         } 
         
-        Console.WriteLine("Arquivo salvo com sucesso!");
+        Console.WriteLine($"Arquivo {path} salvo com sucesso!");
+        Console.ReadLine();
+        Menu();
     }
 
     }
